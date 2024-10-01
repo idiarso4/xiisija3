@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/logo-favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/logo-favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link 
+      rel="stylesheet"
+      href="./customStyles.css"
+    />
+    <title>Helpi - Home</title>
+  </head>
+  <body id="home" class="antialiased bg-black">
+
+    <!-- START NAVBAR -->
+    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-black">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <img src="./assets/img/logo.svg" width="150px" alt="..." class="rounded-full max-w-full h-auto align-middle border-none" />
+        <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="lg:flex flex-grow items-center hidden" id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+
+            <li class="nav-item mt-4">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" target="_blank" href="https://twitter.com/CeloHelpi">
+                <i class="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Tweet</span>
+              </a>
+            </li>
+            <li class="nav-item mt-4">
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" target="_blank" href="https://github.com/helpicelo">
+                <i class="fab fa-github text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Github</span>
+              </a>
+            </li>
+            <li class="flex items-center px-3 my-4">
+              <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                  <i class="mr-2 fas fa-scroll"></i> Lite Paper
+                </button>
+              </a>
+            </li>
+            <li class="flex items-center px-3">
+              <a target="_blank" href="app.helpi.com">
+                <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                  <i class="mr-2 fas fa-heart"></i> launch app
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- STARTS CONTENT -->
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 88vh;"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("./assets/img/bg4.jpg");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute"
+          ></span>
+        </div>
+        <div class="container relative mx-auto ml-auto mt-3">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="pr-12">
+                <h1 class="text-primary-color font-semibold text-4xl">
+                  Welcome SI - One.
+                </h1>
+                <h2 class="mt-4 mb-4 text-lg font-semibold text-gray-300">
+                  Helpi, The first social-based farming dApp deployed in Celo ... Users can participate in Helpi as Yield Farmers and Liquidity Providers with rewards on Helpi tokens... The earnings are distributed between Social Enterprises and holders... We introduce the concept of  DeFi with social impact!
+                </h2>
+                <div class="flex flex-col md:flex-row">
+                  <div class="lg:my-4 lg:mr-4 mt-3">
+                    <a target="_blank" href="https://www.idiarso.my.id/">
+                      <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                        <i class="mr-2 fas fa-scroll"></i> Lite Paper
+                      </button>
+                    </a>
+                  </div>
+                  <div class="lg:my-4 mt-3">
+                    <a href="#about-us">
+                      <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                        <i class="mr-2 fas fa-heart"></i> About Helpi
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section id="about-us" class="relative py-10">
+      <div class="container mx-auto px-4">
+        <div class="text-white text-center">
+          <h3 class="text-5xl">About Helpi</h3>
+        </div>
+        <div class="flex flex-wrap items-center mt-16">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <img src="./assets/img/logo.svg" width="150px" alt="..." class="rounded-full max-w-full h-auto align-middle border-none" />
+            <p class="text-xl text-gray-300 leading-relaxed mt-4 mb-4">Helpi’s aim is to empower anyone with a smartphone/laptop anywhere in the world to have access to decentralized finance that is operated by a community of users, is not the typical farming dApp in other public chains because the platform supports social impact enterprises campaigned by immigrants with its protocol.</p>
+            <p class="text-xl text-gray-300 leading-relaxed mt-4 mb-4">To achieve this, Helpi is a decentralized exchange built to optimize, improve and add value to the core operations of liquidity pools, farming & staking in the crypto metaverse. Helpi sponsors social enterprises for immigrants in Latin America as well as providing multi-level earnings via DeFi dAPP accessible for every citizen in the world. </p>
+          </div>
+          <div class="w-full md:w-4/12 px-4 py-4 mr-auto ml-auto">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg">
+              <div class="bg-black">
+                <img alt="..." src="./assets/img/helpi-mission-2.png">
+              </div>
+
+              <blockquote class="relative p-8 mb-4 primary-color">
+                  <h4 class="text-xl font-bold text-white">First Of Our Kind</h4>
+                  <p class="text-md font-awesome mt-2 text-white">Introducing a pioneer concept such as Social Initial Offerings HELPI brings dynamism to
+                    the DeFi ecosystem.</p>
+                  <ul class="list-none mt-3 text-white">
+                    <li class="py-2">
+                      <div class="flex items-center">
+                        <div>
+                          <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-primary-color bg-white mr-3">
+                            <i class="fas fa-meteor text-3xl"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 class="">Socially Incentivised Farms</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="py-3">
+                      <div class="flex items-center">
+                        <div>
+                          <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-primary-color bg-white mr-3">
+                            <i class="fas fa-gavel text-3xl"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 class="">Decentralized Exchange</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="flex items-center">
+                        <div>
+                          <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-primary-color bg-white mr-3">
+                            <i class="fas fa-network-wired text-3xl"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 class="">Governance Token</h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-20">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+          </svg>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-4/12 md:w-6/12 ml-auto mr-auto px-4">
+              <div class="bg-white text-gray-800 relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg border-0">
+              
+                <div class="rounded-t mb-0 mb-4"> 
+                  <img alt="..." src="./assets/img/campaigns/campaign-1.png" class="w-full align-middle rounded-t-lg">
+                </div>
+
+                <div class="text-center">
+
+                  <h3 class="text-3xl font-semibold">Wedding Planner</h3>
+
+                  <p class="mt-4 mb-4 px-4 text-left text-lg leading-relaxed">
+                    When I moved to Colombia I was a professional in Venezuela, Maracaibo. I worked in the beauty industry since I was 18 years...
+                  </p>
+
+                  <a target="">
+                    <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      <i class="mr-2 fas fa-book-open"></i>LEARN MORE
+                    </button>
+                  </a>
+
+                  <div class="container mx-auto my-8">
+                    <div class="items-center flex flex-wrap primary-color">
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">APY</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">TVL</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">LP Token</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="container mx-auto my-8">
+
+                      <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                        <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                          <i class="mr-2 fas fa-scroll"></i>Deposit
+                        </button>
+                      </a>
+
+                      <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                        <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                          <i class="mr-2 fas fa-rocket"></i>Stake
+                        </button>
+                      </a>
+
+                      <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                        <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                          <i class="mr-2 fas fa-rocket"></i>Claim
+                        </button>
+                      </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="w-full lg:w-4/12 md:w-6/12 ml-auto mr-auto px-4">
+              <div class="bg-white text-gray-800 relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg border-0">
+              
+                <div class="rounded-t mb-0 mb-4"> 
+                  <img alt="..." src="./assets/img/campaigns/campaign-2.png" class="w-full align-middle rounded-t-lg">
+                </div>
+
+                <div class="text-center">
+
+                  <h3 class="text-3xl font-semibold">Tin Marin Pizzeria</h3>
+
+                  <p class="mt-4 mb-4 px-4 text-left text-lg leading-relaxed">
+                    Tin Marin Pizzeria is a new player in the restaurant industry in a commercial zone in Bogotá.  The restaurant is in a comfortable...
+                  </p>
+
+                  <a target="">
+                    <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      <i class="mr-2 fas fa-book-open"></i>LEARN MORE
+                    </button>
+                  </a>
+
+                  <div class="container mx-auto my-8">
+                    <div class="items-center flex flex-wrap primary-color">
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">APY</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">TVL</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">LP Token</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="container mx-auto my-8">
+
+                      <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                        <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                          <i class="mr-2 fas fa-scroll"></i>Deposit
+                        </button>
+                      </a>
+
+                      <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                        <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                          <i class="mr-2 fas fa-rocket"></i>Stake
+                        </button>
+                      </a>
+
+                      <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                        <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                          <i class="mr-2 fas fa-rocket"></i>Claim
+                        </button>
+                      </a>
+                </div>
+                
+              </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-4/12 md:w-6/12 ml-auto mr-auto px-4">
+              <div class="bg-white text-gray-800 relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg border-0">
+              
+                <div class="rounded-t mb-0 mb-4"> 
+                  <img alt="..." src="./assets/img/campaigns/campaign-3.png">
+                </div>
+
+                <div class="text-center">
+
+                  <h3 class="text-3xl font-semibold">digica LLC</h3>
+                  <p class="mt-4 mb-4 px-4 text-left text-lg leading-relaxed">
+                    Our Goal is to further extend the reach of technology in society. By developing solutions based on OSS, we hope to...
+                  </p>
+                  <a target="">
+                    <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      <i class="mr-2 fas fa-book-open"></i>LEARN MORE
+                    </button>
+                  </a>
+
+                  <div class="container mx-auto my-8">
+                    <div class="items-center flex flex-wrap primary-color">
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">APY</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">TVL</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                      <div class="sm:w-4/12 px-2 mx-auto">
+                        <p class="text-xl text-white my-4">LP Token</p>
+                        <div class="bg-white text-white font-bold uppercase text-base px-8 py-3 shadow-md my-6 shadow-3xl rounded-full shadow-lg shadow-md transition-all duration-150">
+                          <p class="text-primary-color text-lg">100%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="container mx-auto my-8">
+                  <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                    <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      <i class="mr-2 fas fa-scroll"></i>Deposit
+                    </button>
+                  </a>
+
+                  <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                    <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      <i class="mr-2 fas fa-rocket"></i>Stake
+                    </button>
+                  </a>
+
+                  <a target="_blank" href="./assets/litepaper/helpi-litepaper.pdf">
+                    <button class="primary-color text-white active:bg-red-900 font-bold uppercase text-base px-6 py-3 shadow-3xl shadow-md rounded shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      <i class="mr-2 fas fa-rocket"></i>Claim
+                    </button>
+                  </a>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-us" class="relative py-20">
+        <div class="container mx-auto">
+          <div class="text-white text-center my-8">
+            <h3 class="text-5xl">The Team</h3>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 my-8">
+              <div class="px-6">
+                <img alt="..." src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-1-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-white">Ryan Tompson</h5>
+                  <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">Web Developer</p>
+                  <div class="mt-6">
+                    <button class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-facebook-square"></i>
+                    </button>
+                    <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 my-8">
+              <div class="px-6">
+                <img alt="..." src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-2-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-white">Romina Hadid</h5>
+                  <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">Marketing Specialist</p>
+                  <div class="mt-6">
+                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-google"></i>
+                    </button>
+                    <button class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-facebook-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 my-8">
+              <div class="px-6">
+                <img alt="..." src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-3-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-white">Alexa Smith</h5>
+                  <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">UI/UX Designer</p>
+                  <div class="mt-6">
+                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-google"></i>
+                    </button>
+                    <button class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-instagram"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 my-8">
+              <div class="px-6">
+                <img alt="..." src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-4-470x470.png" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;">
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-white">Jenna Kardi</h5>
+                  <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">Founder and CEO</p>
+                  <div class="mt-6">
+                    <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                    <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-google"></i>
+                    </button>
+                    <button class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                      <i class="fab fa-instagram"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- START FOOTER -->
+    <footer> 
+      <section>
+        <div class="container mx-auto py-10">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-6/12 px-4">
+              <img src="./assets/img/logo.svg" width="150px" alt="..."/>
+              <h4 class="text-3xl font-semibold text-white">Let's keep in touch!</h4>
+              <h5 class="text-lg mt-0 mb-2 text-white">Find us on any of these platforms, we respond 1-2 business days.</h5>
+              <div class="mt-6">
+                <a href="https://www.twitter.com/creativetim" target="_blank">
+                  <i class="fab fa-twitter bg-white text-lightBlue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+                </a>
+                <a href="https://www.facebook.com/creativetim" target="_blank">
+                  <i class="fab fa-facebook-square bg-white text-lightBlue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+                </a>
+                <a href="https://www.dribbble.com/creativetim" target="_blank">
+                  <i class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+                </a>
+                <a href="https://www.github.com/creativetimofficial" target="_blank">
+                  <i class="fab fa-github bg-white text-blueGray-800 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+                </a>
+              </div>
+              <p class="text-sm mt-6 text-white font-semibold">Currently v1.1.0. Code<a href="https://github.com/creativetimofficial/tailwind-starter-kit" class="text-white" target="_blank"> licensed MIT</a>, docs<a href="https://creativecommons.org/licenses/by/4.0/" targe="_blank" class="text-white"> CC BY 4.0</a>.</p>
+            </div>
+            <div class="w-full md:w-6/12 px-4">
+              <div class="flex flex-wrap items-top mb-6">
+                <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
+                  <span class="block uppercase text-white text-sm font-semibold mb-2">Useful Links</span>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="#about-us" target="">About Us</a>
+                    </li>
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="#home" target="">Home</a>
+                    </li>
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial/tailwind-starter-kit" target="_blank">Github</a>
+                    </li>
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free" target="_blank">Free Products</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
+                  <span class="block uppercase text-white text-sm font-semibold mb-2">Other Resources</span>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/tailwind-starter-kit/blob/master/LICENSE.md" target="_blank">MIT License</a>
+                    </li>
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms" target="_blank">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a class="text-white font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us" target="_blank">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-blueGray-300">
+          <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div class="text-sm text-white font-semibold py-1">Copyright © 2021 Tailwind Starter Kit by <a href="https://www.creative-tim.com" class="text-white" target="_blank">Creative Tim</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
